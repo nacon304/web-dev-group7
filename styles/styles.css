@@ -1,0 +1,119 @@
+body {
+    font-size: 16px;
+    background: #E5E7EB;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.dark-mode {
+    display: flex;
+    align-items: center; 
+    width: max-content;
+}
+
+.language {
+    display: flex;
+    align-items: center; 
+
+}
+
+
+main {
+    display: flex;
+}
+.menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    height: 100%;
+    /* overflow-y: auto; */
+    background: white;
+}
+a {
+    text-decoration: none;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 90px;
+}
+
+.menu-item:last-child  {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-item p {
+    color: black;
+}
+.menu-item:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+.content {
+    margin-top: 72px;
+    margin-left: 155px;
+    width: 100%;
+}
+
+.menu-2 {
+    margin: 1rem 2rem;
+}
+
+.menu-2 li a{
+    color: black;
+}
+
+.img-language, .bi-person-circle {
+    width: 2rem;
+}
+
+.circle {
+    width: 3rem; /* Điều chỉnh kích thước của hình tròn */
+    height: 3rem; /* Điều chỉnh kích thước của hình tròn */
+    border-radius: 50%; /* Biến hình thành hình tròn */
+    overflow: hidden; /* Ẩn phần ngoài của hình tròn */
+    position: relative; /* Để có thể định vị hình ảnh bên trong */
+    
+  }
+  
+  .centered-image {
+    position: absolute; /* Định vị hình ảnh theo tọa độ tương đối với phần tử cha */
+    top: 50%; /* Đưa hình ảnh lên trên 50% của hình tròn */
+    left: 50%; /* Đưa hình ảnh sang trái 50% của hình tròn */
+    transform: translate(-50%, -50%); /* Dịch chuyển hình ảnh để nằm chính giữa hình tròn */
+    max-width: 100%; /* Hình ảnh không vượt quá kích thước của hình tròn */
+    max-height: 100%; /* Hình ảnh không vượt quá kích thước của hình tròn */
+  }
+  
+footer {
+    margin-left: 150px;
+}
+
+
