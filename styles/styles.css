@@ -25,12 +25,13 @@ header {
 .language {
     display: flex;
     align-items: center; 
-
 }
 
 
 main {
     display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 .menu {
     position: fixed;
@@ -90,6 +91,11 @@ a {
     color: black;
 }
 
+.selected-menu-item {
+    background-color: #F8FAFC;
+    border-left: 0.3rem solid #D21919 !important;
+}
+
 .img-language, .bi-person-circle {
     width: 2rem;
 }
@@ -114,6 +120,7 @@ a {
   
 footer {
     margin-left: 150px;
+    margin-top: auto;
 }
 
 
