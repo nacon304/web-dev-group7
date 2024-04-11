@@ -1,0 +1,76 @@
+.container-fluid {
+    overflow-x: auto; /* Tạo thanh cuộn ngang nếu nội dung tràn */
+}
+
+.nav-underline {
+    display: flex;
+    flex-wrap: nowrap; /* Không cho các phần tử tràn xuống hàng mới */
+    overflow-x: auto; /* Tạo thanh cuộn ngang nếu nội dung tràn */
+}
+/* .navbar-menu {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+  } */
+  
+.nav-item {
+    white-space: nowrap; /* Ngăn chặn các phần tử tràn xuống dòng mới */
+}
+.nav {
+    display: flex; /* Hiển thị các mục nav trên cùng một hàng */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    margin-left: 60px; /* Margin bên trái */
+    margin-right: 60px;
+}
+  
+.nav-item {
+    flex: 0 0 auto; /* Không cho phép các mục nav co dãn */
+}
+.overflow-container {
+    position: relative;
+    overflow-x: auto;
+}
+
+.next-btn, .prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.prev-btn {
+    left: 10px; /* Điều chỉnh vị trí */
+}
+
+.next-btn {
+    right: 10px; /* Điều chỉnh vị trí */
+}
+
+.left-side{
+    display: inline-flex;
+    align-items: center;
+}
+#requirement-h{
+    font-size: 1rem;
+    max-width: 170px;
+}
+.count-box {
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 26%);
+    margin: 3px;
+}
+.count-box {
+    background: #d21919a9;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 10px;
+    display: inline-flex;
+    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+}
