@@ -285,8 +285,11 @@
             </div>
           </div>
         </nav>
-        <div class="container mx-auto bg-white py-3 h-100">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container mx-auto bg-white py-3 h-100 w-100 mb-2">
+          <nav
+            class="navbar navbar-expand-lg bg-body-tertiary"
+            style="border-radius: 0.25rem"
+          >
             <div class="container-fluid d-flex justify-content-between">
               <div class="left-side">
                 <h6 class="mb-0" id="requirement-h">
@@ -294,8 +297,72 @@
                   <span class="ml-2 count-box">0</span>
                 </h6>
               </div>
+              <div class="right-side">
+                <a title="Guide" class="mr-3">
+                  <img
+                    src="../assets/images/guide.png"
+                    alt="Guide"
+                    style="width: 30px"
+                  />
+                </a>
+                <a title="Import" class="abutton mr-3">
+                  <img
+                    src="../assets/images/import.png"
+                    alt="Import"
+                    style="width: 20px"
+                  />
+                  <p class="mb-0">Import</p>
+                </a>
+                <a title="Archived Requirement Type" class="abutton mr-3">
+                  <img
+                    src="../assets/images/archived.png"
+                    alt="Archived"
+                    style="width: 20px"
+                  />
+                  <p class="mb-0">Archived</p>
+                </a>
+                <a
+                  title="Add Requirment Type"
+                  class="btn btn-outline-danger d-inline-flex align-items-center justify-content-between mr-3"
+                >
+                  <p class="mb-0">+ Add Requirement Type</p>
+                </a>
+              </div>
             </div>
           </nav>
+          <div class="row mt-2 p-20 m-0">
+            <div class="module-section h-100 col-xs-12 col-md-12 col-lg-3 p-0">
+              <div class="module-header">
+                <h6 style="font-size: 1rem; align-items: center; margin: 0">
+                  Requirement Type
+                </h6>
+                <div class="module-action" style="font-size: 20px">
+                  <a title="Add Requirement Type">
+                    <i class="bi bi-plus"></i>
+                  </a>
+                  <a title="Click To Expand">
+                    <i class="bi bi-arrow-right-short"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="module-body h-100" style="min-height: 300px">
+                <div class="example-description">
+                  <input
+                    type="text"
+                    class="form-control"
+                    style="font-size: small"
+                    placeholder="Type To Filter Requirement Type"
+                  />
+                </div>
+                <div class="no-record">No Requirement Types Found</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-9 p-0 h-100" style="max-width: 822px">
+              <div class="requirement-list-section">
+                <div>No Requirements Found</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
