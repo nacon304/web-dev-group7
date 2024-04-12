@@ -1,0 +1,48 @@
+.menu-2 {
+    margin: 1rem 2rem;
+}
+
+.menu-2 li a{
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.status-passed {
+    background-color: rgb(92, 184, 92);
+}
+
+.status-untested {
+    background-color: rgb(70, 191, 189);
+}
+
+.status-blocked {
+    background-color: rgb(77, 83, 96);
+}
+
+.status-retest {
+    background-color: rgb(253, 180, 92);
+}
+
+.status-failed {
+    background-color: rgb(247, 70, 74);
+}
+
+.status-not-applicable {
+    background-color: rgb(147, 119, 85);
+}
+
+.status-in-progress {
+    background-color: rgb(87, 147, 243);
+}
+
+.status-hold {
+    background-color: rgb(23, 162, 184);
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
