@@ -20,19 +20,7 @@
     z-index: 1000;
   } */
   
-.nav-item {
-    white-space: nowrap; /* Ngăn chặn các phần tử tràn xuống dòng mới */
-}
-.nav {
-    display: flex; /* Hiển thị các mục nav trên cùng một hàng */
-    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
-    margin-left: 60px; /* Margin bên trái */
-    margin-right: 60px;
-}
-  
-.nav-item {
-    flex: 0 0 auto; /* Không cho phép các mục nav co dãn */
-}
+
 .overflow-container {
     position: relative;
     overflow-x: auto;
