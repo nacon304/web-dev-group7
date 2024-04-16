@@ -84,7 +84,15 @@
   }
   statusCaption('.project-status-container', projectStatus, numProjectStatus);
 
-
+  projectStatusContainer = document.querySelector('.project-status-container');
+  const divExportStatus = document.createElement('div');
+  divExportStatus.classList.add('col', 'mx-2', 'mb-2', 'my-auto');
+  const btnExportStatus = document.createElement('button');
+  btnExportStatus.classList.add('btn-export-status','btn', 'btn-danger');
+  btnExportStatus.textContent = 'Export Status';
+  btnExportStatus.style.width = '10rem';
+  divExportStatus.appendChild(btnExportStatus);
+  projectStatusContainer.appendChild(divExportStatus);
 
 
 
