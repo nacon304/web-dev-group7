@@ -1,0 +1,12 @@
+.card{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.view-bar.container-fluid.row{
+    margin-bottom: 2px;
+    margin-top: 2px;
+}

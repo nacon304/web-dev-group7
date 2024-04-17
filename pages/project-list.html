@@ -21,7 +21,9 @@ w
         <link rel="stylesheet" href="../styles/shared-styles.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-s
+        
+
+        <link rel="stylesheet" href="../styles/project-list.css">
     </head>
 
     <body>
@@ -196,29 +198,7 @@ s
                 <div class="view-bar">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-md-4" id="search-bar">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-secondary" type="button">
-                                        <i class="bi bi-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4" id="filter-dropdown">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Filter
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="filterDropdown">
-                                        <li><a class="dropdown-item" href="#">Option 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Option 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4" id="view-modes">
+                            <div class="col-md-6" id="view-modes">
                                 <div class="btn-group" role="group" aria-label="View Modes">
                                     <button type="button" class="btn btn-secondary active" id="btn-grid-view">
                                         <i class="bi bi-grid-3x3-gap-fill"></i>
@@ -230,9 +210,102 @@ s
                                 </div>
                             </div>
                         </div>
+                            
+                        <div class="row align-items-center">
+                            <div class="col-md-8" id="search-bar">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" id="search-input">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="query()">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4" id="filter-bar">
+                                <div class="row">
+                                    <div class="col-auto" id="filter-dropdown">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Filter
+                                            </button>
+
+                                            <!-- Update this later -->
+                                            <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                                                <!-- Loop through the project dataset and generate options dynamically -->
+                                                <!-- Replace 'projectData' with the actual variable name holding the project dataset -->
+                                                <!-- Replace 'attributeName' with the actual attribute name to be used as the option value -->
+                                                <!-- Replace 'attributeValue' with the actual attribute value to be displayed as the option text -->
+                                                <!-- Example: -->
+                                                <!-- <li><a class="dropdown-item" href="#" data-attribute="attributeValue">attributeValue</a></li> -->
+                                                <!-- Replace 'attributeName' and 'attributeValue' with the actual attribute names and values -->
+                                                <!-- Example: -->
+                                                <!-- <li><a class="dropdown-item" href="#" data-attribute="name">Project Name</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-auto" id="sort">
+                                        <button id="sort-button" class="btn btn-secondary" onclick="toggleSortDirection()">
+                                            <span id="sort-text">Ascending</span>
+                                            <i id="sort-icon" class="bi bi-arrow-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
                     </div>
                 </div>
 
+                <div class="project-grid">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 1</h5>
+                                        <p class="card-text">Description of Project 1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 2</h5>
+                                        <p class="card-text">Description of Project 2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 3</h5>
+                                        <p class="card-text">Description of Project 3</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 4</h5>
+                                        <p class="card-text">Description of Project 4</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Loop through the project dataset and generate project cards dynamically -->
+                            <!-- Replace 'projectData' with the actual variable name holding the project dataset -->
+                            <!-- Replace 'project' with the actual variable name to be used as the project object -->
+                            <!-- Example: -->
+                            <!-- <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">project.name</h5>
+                </div>  
+                        
             </div>
 
         </main>
@@ -252,7 +325,7 @@ s
             crossorigin="anonymous"
         ></script>
 
-        <script> 
+        <script> // View mode toggle
             const btnGridView = document.getElementById('btn-grid-view');
             const btnListView = document.getElementById('btn-list-view');
 
@@ -269,6 +342,51 @@ s
             });
         </script>
 
+        <script> // Sort by project attributes
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    dropdownItems.forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    item.classList.add('active');
+                });
+            });
+        </script>
 
+        <script> // Sort direction toggle
+            let sortDirection = "ascending";
+
+            function toggleSortDirection() {
+                const sortButton = document.getElementById("sort-button");
+                if (sortDirection === "ascending") {
+                    sortDirection = "descending";
+                    sortButton.innerHTML = `
+                        <span id="sort-text">Descending</span>
+                        <i id="sort-icon" class="bi bi-arrow-down"></i>
+                    `;
+                } else {
+                    sortDirection = "ascending";
+                    sortButton.innerHTML = `
+                        <span id="sort-text">Ascending</span>
+                        <i id="sort-icon" class="bi bi-arrow-up"></i>
+                    `;
+                }
+                // Add functionality here to handle the sort direction
+                if (sortDirection === "ascending") {
+                    // Trigger when sort direction is ascending
+                } else if (sortDirection === "descending") {
+                    // Trigger when sort direction is descending
+                }
+            }
+        </script>
+
+        <script> // query search
+            function query() {
+                var inputElement = document.getElementById("search-input");
+                var queryText = inputElement.value;
+            }
+
+        </script>
     </body>
 </html>
