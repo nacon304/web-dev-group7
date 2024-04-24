@@ -438,27 +438,80 @@
                 </div>
               </div>
             </div>
-            <div class="bg-danger py-3" style="color: #919faf">s</div>
-          </div>
-          <div class="mt-2 mb-3 d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-danger disabled me-5"
-              data-bs-toggle="button"
-              aria-pressed="true"
-              style="width: 7rem"
-            >
-              Import
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-danger"
-              data-bs-toggle="button"
-              aria-pressed="true"
-              style="width: 7rem"
-            >
-              Cancel
-            </button>
+            <div class="mb-3 d-flex" style="color: #919faf">
+              <div class="col-5 px-3">
+                <label
+                  for="form-test-case-tags"
+                  class="form-label d-flex justify-content-between align-items-center"
+                >
+                  Tags
+                  <button type="button" class="btn btn-danger btn-sm px-3">
+                    Tags
+                  </button>
+                </label>
+                <textarea
+                  class="form-control border-0 bg-light"
+                  id="form-test-case-tags"
+                  rows="4"
+                  placeholder="Enter Tag Name"
+                  style="color: #757575"
+                ></textarea>
+              </div>
+              <div class="col-5 px-3">
+                <label
+                  for="form-test-case-description"
+                  class="form-label d-flex justify-content-between align-items-center"
+                >
+                  Description
+                </label>
+                <textarea
+                  class="form-control border-0 bg-light"
+                  id="form-test-case-description"
+                  rows="4"
+                  placeholder="Description"
+                  style="color: #757575"
+                ></textarea>
+              </div>
+            </div>
+            <div class="script-test-case mb-3" style="color: #919faf">
+              <div class="px-3 fw-semibold mb-1">
+                Script 1
+                <span style="color: #f44336">*</span>
+              </div>
+              <div
+                class="d-flex col-10 ms-3 py-3 border border-light-subtle rounded"
+              >
+                <div class="col-2 px-3 mb-4">
+                  <select
+                    class="form-select border-0 bg-light"
+                    aria-label="brow-mode"
+                    style="color: #757575"
+                  >
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-8 px-3">
+                  <textarea
+                    class="form-control border-0 bg-light"
+                    id="form-test-case-description"
+                    rows="4"
+                    style="color: #757575"
+                  ></textarea>
+                </div>
+                <div class="col-1 ps-3">
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm px-3 d-flex align-items-center"
+                    style="height: 2rem !important"
+                  >
+                    <i class="bi bi-plus fs-3"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
