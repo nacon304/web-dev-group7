@@ -170,7 +170,7 @@
  
  });
 
-const rightCol = document.querySelector('.right-side');
+const rightCol = document.querySelector('.right-col');
 
 const toggleButtonFilter = document.getElementById('toggleButtonFilter');
 const toggleIconFilter = document.getElementById('toggleIconFilter');
