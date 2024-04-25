@@ -198,7 +198,7 @@ w
             <div class="content">
                 <ul class="nav nav-underline menu-2 d-flex">
                     <li class="nav-item">
-                      <a class="nav-link mx-2">Overview</a>
+                      <a class="nav-link mx-2 active border-danger " aria-current="page" >Overview</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link mx-2" href="#">Requirements</a>
@@ -213,7 +213,7 @@ w
                         <a class="nav-link mx-2" href="#">Test Cases</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active border-danger mx-2" aria-current="page" href="#">Test Runs</a>
+                        <a class="nav-link mx-2" href="#">Test Runs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="#">Test Plans</a>
@@ -230,8 +230,31 @@ w
                 </ul> 
             
                 
-                <div class="container bg-white rounded-top d-flex " id="address-bar">
-                    adadsads
+                <div class="container bg-white rounded-top d-flex justify-content-between" id="address-bar">
+                    <div class="my-auto d-flex">
+                        <span class="mx-2 project-name">My Business Project</span>
+
+                        <i class="bi bi-chevron-right"></i>
+
+                        <span class="mx-2 address-component">Overview</span>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-seconary dropdown-toggle quick-menu" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                            <i class="bi bi-grid-3x3"></i> Quick Menu
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-brush"></i> Edit project</a></li>
+                            <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-person"></i> View assignees</a></li>
+                            <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-cloud-arrow-up"></i> Import requirements</a></li>
+                            <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-cloud-arrow-up"></i> Import test cases</a></li>
+                            <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-passport"></i> Reports</a></li>
+                        </ul>
+                    </div>
+
+                    
+
+                    
                 </div>
 
                 
