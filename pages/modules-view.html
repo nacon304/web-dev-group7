@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Modules</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../styles/shared-styles.css">
+        <link rel="stylesheet" href="../styles/modules-view.css">
+        <!-- Thư viện jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Thư viện jQuery UI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex px-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/images/logo.png" alt="" class="logo">
+                        <a class="navbar-brand mb-0 h1">ShareBug</a>
+                    </a>
+    
+                    <div class="container-fluid">
+                        <span class="navbar-text">Last Data refresh at: 28th June 2022 at 8:37 PM</span>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="container-fluid border-start border-2 dark-mode">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown border-start border-2 px-2 py-2" style="width: 15rem;">
+                                <select class="form-select" style="background-color: #f5f5f5;" aria-label="Default select example">
+                                <option selected>Web TMS Group 7</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                </select>
+                            </li>
+
+                            <li class="nav-item dropdown border-start border-2 contact">
+                                <a
+                                    class="nav-link dropdown-toggle ms-2 me-2"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    ><i class="bi bi-envelope fs-3 align-middle"></i></a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 1</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 2</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown border-start border-2 pe-0 language">
+                                <a
+                                    class="nav-link dropdown-toggle ms-2 me-2"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >
+                                    <img src="../assets/images/Flag_of_the_United_States.png" alt="" class="img-language">
+                                    English</a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 1</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 2</a
+                                    >
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown border-start border-2 language">
+                                <a
+                                    class="nav-link dropdown-toggle ms-2 me-2"
+                                    href="#"
+                                    id="dropdownId"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >
+                                    <i class="bi bi-person-circle fs-3 align-middle"></i>
+                                    </a
+                                >
+                                <div
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownId"
+                                >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 1</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >Action 2</a
+                                    >
+                                </div>
+                            </li>                            
+                        </ul>
+                        
+                    </div>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="menu border border-secondary-subtle">
+                <ul>
+                    <li class="menu-item">
+                        <a href="#">
+                            <img src="../assets/images/dashboard.png" alt="" class="menu-icon">
+                            <p>Dashboard</p>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-item selected-menu-item">
+                        <a href="#">
+                            <img src="../assets/images/project-list.png" alt="" class="menu-icon">
+                            <p>Project List</p>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">
+                            <img src="../assets/images/administration.png" alt="" class="menu-icon">
+                            <p>Administration</p>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">
+                            <img src="../assets/images/managerial-reports.png" alt="" class="menu-icon">
+                            <p>Managerial Reports</p>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">
+                            <img src="../assets/images/help.png" alt="" class="menu-icon">
+                            <p>Help</p>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">
+                            <img src="../assets/images/tutorials.png" alt="" class="menu-icon">
+                            <p>Tutorials</p>
+
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">
+                            <i class="bi bi-gear" class="menu-icon" style="color: red;"></i>
+                            <p>Setting</p>
+
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="content">
+                <ul class="nav nav-underline menu-2 d-flex">
+                    <li class="nav-item">
+                      <a class="nav-link mx-2">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="#">Requirements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active border-danger mx-2" aria-current="page" href="#">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Test Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Test Runs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Test Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Activity log</a>
+                      </li>
+                </ul> 
+                <div class="container bg-white rounded my-3">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col my-auto d-flex">
+                            <span class="my-auto">All Modules List</span>
+                            <div class="bg-danger-subtle px-2 mx-2 rounded"><span class="text-danger">6</span></div>
+                        </div>
+                        <div class="col right-side d-flex justify-content-end">
+                            <a href="#" class="guide mx-2 my-auto">
+                                <div class="text-center">
+                                    <img src="../assets/images/guide.png" alt="" style="width: 2rem;">
+                                    <br>
+                                    <span>Guide</span>
+                                </div>
+                            </a>
+    
+                            <a href="#" class="mx-2 my-auto d-flex">
+                                <i class="bi bi-cloud-upload me-2"></i>
+                                Import
+                            </a>
+                            
+                            <a href="#" class="mx-2 my-auto d-flex">
+                                <i class="bi bi-archive me-2"></i>
+                                Archived
+                            </a>
+    
+                            <button type="button" class="btn btn-danger btn-graph ms-4 my-auto" data-bs-toggle="modal" data-bs-target="#addModule" style="width: 10rem;"><i class="bi bi-plus"></i> Add Modules</button>
+                            
+                
+                        </div>
+                    </div> 
+                
+               </div>
+
+               <div class="container bg-white rounded h-100 p-3 mb-2">
+                    <div class="row" id="modules-container">
+                        <div class="col-3">
+                            <div class="card" style="min-height: 100vh;">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="modules" onchange="toggleCheckAll(this)">
+                                        <label class="form-check-label" for="modules">Modules (<span class="num-modules">6</span>)</label>
+                                    </div>
+                                    
+                                    <div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#addModule" data-bs-toggle="tooltip" title="Add Module" class="mx-2"><img src="../assets/images/add.svg" alt="" style="width: 1rem; height: 1rem;" class="mb-1"></a>
+                                        <a href="#" data-bs-toggle="tooltip" title="Delete Parent Module" class="mx-2 my-auto"><i class="bi bi-trash text-danger"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <!-- <div id="module-list" class="list-group">
+                                        <a href="#" id="contact" class="list-group-item list-group-item-action rounded border my-2 py-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input module-item" type="checkbox" value="" id="module-item-contact">
+                                                <label class="form-check-label" for="module-item-contact">Contact</label>
+                                            </div>
+                                        </a>
+                                        <a href="#" id="blog" class="list-group-item list-group-item-action rounded border my-2 py-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input module-item" type="checkbox" value="" id="module-item-blog">
+                                                <label class="form-check-label" for="module-item-blog">Blog</label>
+                                            </div>
+                                        </a>
+                                        <a href="#" id="pricing" class="list-group-item list-group-item-action rounded border my-2 py-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input module-item" type="checkbox" value="" id="module-item-pricing">
+                                                <label class="form-check-label" for="module-item-pricing">Pricing</label>
+                                            </div>
+                                        </a>
+                                        <a href="#" id="home-page" class="list-group-item list-group-item-action rounded border my-2 py-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input module-item" type="checkbox" value="" id="module-item-home-page">
+                                                <label class="form-check-label" for="module-item-home-page">Home page</label>
+                                            </div>
+                                        </a>
+                                        <a href="#" id="header-section" class="list-group-item list-group-item-action rounded border my-2 py-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input module-item" type="checkbox" value="" id="module-item-header-section">
+                                                <label class="form-check-label" for="module-item-header-section">Header section</label>
+                                            </div>
+                                        </a>
+                                        <a href="#" id="footer-section" class="list-group-item list-group-item-action rounded border my-2 py-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input module-item" type="checkbox" value="" id="module-item-footer-section">
+                                                <label class="form-check-label" for="module-item-footer-section">Footer section</label>
+                                            </div>
+                                        </a>
+                                    </div> -->
+                                    <div id="module-list" class="list-group">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="col-3 module-contact">
+                            <div class="card" style="min-height: 100vh;">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div>
+                                        Contact (<span class="num-this-modules">0</span>)
+                                    </div>
+                                    
+                                    <div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#addModule" data-bs-toggle="tooltip" title="Add Module" class="mx-2"><img src="../assets/images/add.svg" alt="" style="width: 1rem; height: 1rem;" class="mb-1"></a>
+                                        <a href="#" data-bs-toggle="tooltip" title="Delete Parent Module" class="mx-2 my-auto"><i class="bi bi-trash text-danger"></i></a>
+                                        <button type="button" class="btn-close" disabled aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="container bg-white rounded border p-2">Drag and Drop any modules to make as Sub Modules</div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div> -->
+                    </div>
+                </div>
+
+                
+               
+            </div>
+            <div class="modal fade" id="addModule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <form action="">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <h6 class="modal-title fs-5" id="exampleModalLabel">Module/Sub Module</h6>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <select class="form-select mb-3" aria-label="Default select example">
+                                    <option selected>Select Module</option>
+                                    <option value="contact">Contact</option>
+                                    <option value="blog">Blog</option>
+                                    <option value="pricing">Pricing</option>
+                                    <option value="home page">Home page</option>
+                                    <option value="header section">Header section</option>
+                                    <option value="footer section">Footer section</option>
+                                </select>
+                                <input type="text" class="form-control" placeholder="Please enter the module name *">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-danger">Save</button>
+                                <button type="button" class="btn  btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                              
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+           
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid bg-white d-flex justify-content-between align-items-center">
+                <div class="footer-left d-flex">
+                    <a href="#" class="m-1"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="m-1"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="m-1"><i class="bi bi-youtube"></i></a>
+                </div>
+
+                <div class="footer-mid text-center">
+                    <p class="m-0">Copyright @ 2024</p>
+                    <p class="m-0">Version 2.2.4</p>
+                </div>
+
+                <div class="footer-right">
+                    <span>Terms & Conditions</span>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../scripts/modules-view.js"></script>
+    </body>
+</html>
