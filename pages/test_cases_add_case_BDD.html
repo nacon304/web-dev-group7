@@ -281,7 +281,93 @@
                     </div>
                     <div style="font-size: smaller">
                       To add new module.
-                      <a href="#" class="fw-semibold fs-6">click here</a>
+                      <a
+                        href="#"
+                        class="fw-semibold fs-6"
+                        data-bs-target="#addModule"
+                        data-bs-toggle="modal"
+                        >click here</a
+                      >
+                      <div
+                        class="modal fade"
+                        id="addModule"
+                        tabindex="-1"
+                        aria-labelledby="addModuleLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content border border-1 rounded-2">
+                            <div class="modal-header">
+                              <div
+                                class="modal-title fs-5 fw-semibold text-dark"
+                                id="addModuleLabel"
+                                style="margin-left: 6rem"
+                              >
+                                Add Module / Add Sub Module
+                              </div>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-4">
+                                <label
+                                  for="brow-module"
+                                  class="form-label d-flex justify-content-between"
+                                >
+                                  <div>Select Module</div>
+                                </label>
+                                <input
+                                  list="brow-module"
+                                  class="form-select border-0 bg-light"
+                                  placeholder="Select"
+                                />
+                                <datalist id="brow-module">
+                                  <option value="Home page"></option>
+                                  <option value="Header section"></option>
+                                  <option value="Footer section"></option>
+                                  <option value="Pricing"></option>
+                                  <option value="Blog"></option>
+                                  <option value="Contact"></option>
+                                </datalist>
+                              </div>
+                              <div class="mb-4" style="color: #919faf">
+                                <label
+                                  for="form-test-case-title"
+                                  class="form-label d-flex justify-content-between"
+                                >
+                                  <div>
+                                    Module Name
+                                    <span style="color: #f44336">*</span>
+                                  </div>
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control border-0 bg-light"
+                                  id="form-test-case-title"
+                                  placeholder="Please Enter Module Name"
+                                  style="color: #757575"
+                                />
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger mx-2">
+                                Save
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-danger mx-2"
+                                data-bs-dismiss="modal"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </label>
                   <input
@@ -541,6 +627,12 @@
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
   </body>
