@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="icon" href="../assets/images/logo.png">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -202,7 +203,7 @@
                         <span>Add Reports</span>
                     </div>
                     
-                    <form action="">
+                    <form action="" class="needs-validation" novalidate>
                         <div class="row p-3">
                             <div class="col">
                                 <div class="mb-3 d-flex">
@@ -250,9 +251,11 @@
                                 <div class="mb-3 d-flex">
                                     <label for="fTitle" class="form-label" style="width: 17rem;">Title <span class="text-danger">*</span></label>
                                     <div class="w-100">
-                                        <input class="form-control" id="fTitle" name="report-title" type="text" placeholder="Title..." aria-label="default input example">        
+                                        <input class="form-control" id="fTitle" name="report-title" type="text" placeholder="Title..." aria-label="default input example" required>        
                                     </div>
-                                    
+                                    <div class="invalid-feedback">
+                                        Please enter the Title.
+                                      </div>
                                 </div>
                                 <div class="mb-3 d-flex">
                                     <div style="width: 17rem;">Duration</div>
@@ -348,6 +351,9 @@
         ></script>
 
         <script src="../scripts/report-view.js">
+            
+        </script>
+        <script src="../scripts/shared-script.js">
             
         </script>
     </body>

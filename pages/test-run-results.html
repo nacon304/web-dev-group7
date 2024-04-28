@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="icon" href="../assets/images/logo.png">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -594,7 +595,7 @@
                                                 <td scope="col" class="bg-body-tertiary align-middle">
                                                     <div class="d-flex">
                                                         <a href="#" data-bs-toggle="tooltip" title="Elapsed Time" class="my-auto mx-2"><img src="../assets/images/elapsed-time.png" alt="" style="width: 1.5rem; height: 1.5rem;"></a>
-                                                        <a href="#" data-bs-toggle="tooltip" title="Add Issue" class="my-auto mx-2"><i class="bi bi-bug" style="font-size:larger;"></i></a>
+                                                        <a href="#" class="my-auto mx-2" data-bs-toggle="modal" data-bs-target="#addIssue"  data-bs-toggle="tooltip" title="Add Issue" ><i class="bi bi-bug" style="font-size:larger;"></i></a>
                                                         <a href="#" data-bs-toggle="tooltip" title="Add Result" class="my-auto mx-2"><i class="bi bi-file-earmark-text" style="font-size:large;"></i></a>
                                                         <a href="#" data-bs-toggle="tooltip" title="Add Lated Steps" class="mx-2 my-auto"><img src="../assets/images/add.svg" alt="" style="width: 1rem; height: 1rem;"></a>
                                                         <a href="#" data-bs-toggle="tooltip" title="Timesheet" class="mx-2 my-auto"><i class="bi bi-clock"></i></a>
@@ -683,7 +684,7 @@
                                                 <td scope="col" class="bg-body-tertiary align-middle">
                                                     <div class="d-flex">
                                                         <a href="#" data-bs-toggle="tooltip" title="Elapsed Time" class="my-auto mx-2"><img src="../assets/images/elapsed-time.png" alt="" style="width: 1.5rem; height: 1.5rem;"></a>
-                                                        <a href="#" data-bs-toggle="tooltip" title="Add Issue" class="my-auto mx-2"><i class="bi bi-bug" style="font-size:larger;"></i></a>
+                                                        <a href="#" class="my-auto mx-2" data-bs-toggle="modal" data-bs-target="#addIssue"  data-bs-toggle="tooltip" title="Add Issue" ><i class="bi bi-bug" style="font-size:larger;"></i></a>
                                                         <a href="#" data-bs-toggle="tooltip" title="Add Result" class="my-auto mx-2"><i class="bi bi-file-earmark-text" style="font-size:large;"></i></a>
                                                         <a href="#" data-bs-toggle="tooltip" title="Add Lated Steps" class="mx-2 my-auto"><img src="../assets/images/add.svg" alt="" style="width: 1rem; height: 1rem;"></a>
                                                         <a href="#" data-bs-toggle="tooltip" title="Timesheet" class="mx-2 my-auto"><i class="bi bi-clock"></i></a>
@@ -694,33 +695,38 @@
                                               </tr>
                                             </tbody>
                                         </table>
-                                        <div class="modal fade" id="addIssue" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
-                                            <div class="modal-dialog modal-fullscreen">
-                                              <div class="modal-content" style="margin-left: 300px; padding-right: 300px;">
-                                                <div class="modal-header">
-                                                    <ul class="nav nav-underline menu-2">
-                                                        <li class="nav-item">
-                                                          <a class="nav-link active border-danger" aria-current="page" href="#">Add Issue</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                          <a class="nav-link" href="#">Custom Fields</a>
-                                                        </li>
-                                                    </ul> 
+                                        <form action="" class="needs-validation" novalidate>
+                                            <div class="modal fade" id="addIssue" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+                                                <div class="modal-dialog modal-fullscreen">
+                                                <div class="modal-content" style="margin-left: 300px; padding-right: 300px;">
+                                                    <div class="modal-header">
+                                                        <ul class="nav nav-underline menu-2">
+                                                            <li class="nav-item">
+                                                            <a class="nav-link active border-danger" aria-current="page" href="#">Add Issue</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                            <a class="nav-link" href="#">Custom Fields</a>
+                                                            </li>
+                                                        </ul> 
+                                                        
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
                                                     
-                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body px-5">
-                                                    <form action="">
+                                                    <div class="modal-body px-5">
+                                                    
                                                         <div class="row row-cols-md-2">
                                                             <div class="col mb-3">
                                                                 <label for="fPriority" class="form-label">Priority <span class="text-danger">*</span></label>
-                                                                <input class="form-control" list="datalistPriority" id="fPriority" name="priority" placeholder="Select a Priority">
+                                                                <input class="form-control" list="datalistPriority" id="fPriority" name="priority" placeholder="Select a Priority" required>
                                                                 <datalist id="datalistPriority">
                                                                     <option value="Show topper">
                                                                     <option value="Hight">
                                                                     <option value="Medium">
                                                                     <option value="Low">
-                                                                </datalist>      
+                                                                </datalist>  
+                                                                <div class="invalid-feedback">
+                                                                    Please enter the Priority.
+                                                                </div>    
                                                             </div>
                                                             <div class="col mb-3">
                                                                 <label for="fEnvironment" class="form-label">Environment </label>
@@ -731,7 +737,7 @@
                                                             </div>
                                                             <div class="col mb-3">
                                                                 <label for="fStatus" class="form-label">Status <span class="text-danger">*</span></label>
-                                                                <input class="form-control" list="datalistStatus" id="fStatus" name="status" placeholder="Select a Status">
+                                                                <input class="form-control" list="datalistStatus" id="fStatus" name="status" placeholder="Select a Status" required>
                                                                 <datalist id="datalistStatus">
                                                                     <option value="Assigned">
                                                                     <option value="Closed">
@@ -744,7 +750,10 @@
                                                                     <option value="Reopen">
                                                                     <option value="Retest">
                                                                     <option value="Verified">
-                                                                </datalist>      
+                                                                </datalist>
+                                                                <div class="invalid-feedback">
+                                                                    Please enter the Status.
+                                                                </div>      
                                                             </div>
                                                             <div class="col mb-3">
                                                                 <label for="fAssignedTo" class="form-label">Assigned To</label>
@@ -785,7 +794,10 @@
                                                         <div class="row row-cols-md-2">
                                                             <div class="col mb-3">
                                                                 <label for="fIssueSummary" class="form-label">Issue Summary <span class="text-danger">*</span></label>
-                                                                <textarea class="form-control" id="fIssueSummary" rows="3" name="issue-summary" placeholder="Enter Issue Summary"></textarea>
+                                                                <textarea class="form-control" id="fIssueSummary" rows="3" name="issue-summary" placeholder="Enter Issue Summary" required></textarea>
+                                                                <div class="invalid-feedback">
+                                                                    Please enter the Issue Summary.
+                                                                  </div>
                                                             </div>
 
                                                             <div class="col mb-3">
@@ -828,50 +840,49 @@
                                                         </div>
                                                         <div class="my-2">
                                                             <div
-                                                              class="upload-file py-3 mb-3 d-flex justify-content-center"
-                                                              style="border: dashed 1px #dc3545 !important"
+                                                            class="upload-file py-3 mb-3 d-flex justify-content-center"
+                                                            style="border: dashed 1px #dc3545 !important"
                                                             >
-                                                              <div class="mt-0 col-4 d-flex justify-content-center me-2">
+                                                            <div class="mt-0 col-4 d-flex justify-content-center me-2">
                                                                 <img
-                                                                  src="../assets/images/import_file.svg"
-                                                                  alt="Import Files"
-                                                                  style="width: 150px"
+                                                                src="../assets/images/import_file.svg"
+                                                                alt="Import Files"
+                                                                style="width: 150px"
                                                                 />
-                                                              </div>
-                                                              <div class="col-4 py-3">
+                                                            </div>
+                                                            <div class="col-4 py-3">
                                                                 <div
-                                                                  class="d-block text-center align-items-center"
-                                                                  style="width: 80%"
+                                                                class="d-block text-center align-items-center"
+                                                                style="width: 80%"
                                                                 >
-                                                                  <button
+                                                                <button
                                                                     type="button"
                                                                     class="btn btn-outline-danger mt-4 mb-2 w-100"
-                                                                  >
+                                                                >
                                                                     Drop Files
-                                                                  </button>
-                                                                  <p class="mt-2 fs-6" style="color: #999">
+                                                                </button>
+                                                                <p class="mt-2 fs-6" style="color: #999">
                                                                     Drop files here 
-                                                                  </p>
+                                                                </p>
                                                                 </div>
-                                                              </div>
+                                                            </div>
                                                             </div>
                                                             <p>File size should be less than 2MB and allowed formats are <strong>.xls, .xlsx, .doc, .docx, .txt, .pdf, .csv, .log, .zip, .mp4, .webm, .ipynb, .odf, .gif, .png, .jpg, .ppt, .pptx, .mov</strong></p>
                                                         </div>
-
-                                                        
-                                                    </form>
-                
-                                                    
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <div class="right-side d-flex">
-                                                        <button type="button" class="btn btn-outline-danger mx-2" data-bs-dismiss="modal">Cancel</button>
-                                                        <button type="button" class="btn btn-danger mx-2">Save</button>
+                               
                                                     </div>
+                                                    
+                                                    <div class="modal-footer">
+                                                        <div class="right-side d-flex">
+                                                            <button type="button" class="btn btn-outline-danger mx-2" data-bs-dismiss="modal">Cancel</button>
+                                                            <button type="submit" class="btn btn-danger mx-2">Save</button>
+                                                        </div>
+                                                    </div>
+                                                
                                                 </div>
-                                              </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                               </div>
@@ -915,6 +926,9 @@
         ></script>
 
         <script src="../scripts/test-run-results-module.js">
+            
+        </script>
+        <script src="../scripts/shared-script.js">
             
         </script>
     </body>
