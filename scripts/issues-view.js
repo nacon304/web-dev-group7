@@ -187,3 +187,13 @@ toggleButtonFilter.addEventListener('click', function() {
       toggleIconFilter.classList.add('bi-chevron-compact-right');
     }
   });
+
+
+  function toggleCheckAll(source) {
+    var checkboxes = document.querySelectorAll('.code-item');
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox !== source) {
+            checkbox.checked = source.checked;
+        }
+    });
+  }

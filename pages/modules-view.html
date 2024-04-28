@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="icon" href="../assets/images/logo.png">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -352,7 +353,7 @@
             </div>
             <div class="modal fade" id="addModule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    <form action="">
+                    <form action="" class="needs-validation" novalidate>
                         <div class="modal-content">
                             <div class="modal-header">
                               <h6 class="modal-title fs-5" id="exampleModalLabel">Module/Sub Module</h6>
@@ -368,7 +369,10 @@
                                     <option value="header section">Header section</option>
                                     <option value="footer section">Footer section</option>
                                 </select>
-                                <input type="text" class="form-control" placeholder="Please enter the module name *">
+                                <input type="text" class="form-control" placeholder="Please enter the module name *" required>
+                                <div class="invalid-feedback">
+                                    Please enter the module name.
+                                  </div>
 
                             </div>
                             <div class="modal-footer">
@@ -415,5 +419,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="../scripts/modules-view.js"></script>
+        <script src="../scripts/shared-script.js"></script>
     </body>
 </html>

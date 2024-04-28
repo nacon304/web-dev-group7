@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Test Runs & Results</title>
+    <title>Test Case - Add Case Step</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <link rel="icon" href="../assets/images/logo.png">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -346,7 +348,8 @@
                   >
                 </li>
               </ul>
-              <div
+              <form action="" class="needs-validation" novalidate>
+                <div
                 class="modal fade"
                 id="addCaseStep"
                 tabindex="-1"
@@ -376,7 +379,7 @@
                             >
                               Cancel
                             </button>
-                            <button type="button" class="btn btn-danger mx-2">
+                            <button type="submit" class="btn btn-danger mx-2">
                               Save
                             </button>
                           </div>
@@ -481,6 +484,7 @@
                             <input
                               list="brow-module"
                               class="form-select border-0 bg-light"
+                              required
                             />
                             <datalist id="brow-module">
                               <option value="Home page"></option>
@@ -490,6 +494,9 @@
                               <option value="Blog"></option>
                               <option value="Contact"></option>
                             </datalist>
+                            <div class="invalid-feedback">
+                              Please Select Module.
+                            </div>
                             <div
                               style="
                                 font-size: smaller;
@@ -505,113 +512,7 @@
                               >
                                 Click here
                               </button>
-                              <div
-                                class="modal fade"
-                                id="addModule"
-                                tabindex="-1"
-                                aria-labelledby="addModuleLabel"
-                                aria-hidden="true"
-                              >
-                                <div class="modal-dialog modal-dialog-centered">
-                                  <div
-                                    class="modal-content border border-1 rounded-2"
-                                  >
-                                    <div class="modal-header">
-                                      <div
-                                        class="modal-title fs-5 fw-semibold text-dark"
-                                        id="addModuleLabel"
-                                        style="margin-left: 6rem"
-                                      >
-                                        Add Module / Add Sub Module
-                                      </div>
-                                      <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"
-                                      ></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="mb-4">
-                                        <label
-                                          for="brow-module"
-                                          class="form-label d-flex justify-content-between"
-                                        >
-                                          <div>Select Module</div>
-                                        </label>
-                                        <input
-                                          list="brow-module"
-                                          class="form-select border-0 bg-light"
-                                        />
-                                        <datalist id="brow-module">
-                                          <option value="Home page"></option>
-                                          <option
-                                            value="Header section"
-                                          ></option>
-                                          <option
-                                            value="Footer section"
-                                          ></option>
-                                          <option value="Pricing"></option>
-                                          <option value="Blog"></option>
-                                          <option value="Contact"></option>
-                                        </datalist>
-                                      </div>
-                                      <div class="mb-4" style="color: #919faf">
-                                        <label
-                                          for="form-test-case-title"
-                                          class="form-label d-flex justify-content-between"
-                                        >
-                                          <div>
-                                            Module Name
-                                            <span style="color: #f44336"
-                                              >*</span
-                                            >
-                                          </div>
-                                        </label>
-                                        <input
-                                          type="text"
-                                          class="form-control border-0 bg-light"
-                                          id="form-test-case-title"
-                                          placeholder="Please Enter Module Name"
-                                          style="color: #757575"
-                                        />
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button
-                                        type="button"
-                                        class="btn btn-danger mx-2"
-                                      >
-                                        Save
-                                      </button>
-                                      <button
-                                        type="button"
-                                        class="btn btn-danger mx-2"
-                                      >
-                                        Save & Continue
-                                      </button>
-                                      <button
-                                        type="button"
-                                        class="btn btn-outline-danger mx-2"
-                                        data-bs-dismiss="modal"
-                                      >
-                                        Cancel
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <script>
-                                document
-                                  .getElementById("btnAddModule")
-                                  .addEventListener("click", function () {
-                                    // Mở modal 2 khi nhấp vào nút
-                                    var modal2 = new bootstrap.Modal(
-                                      document.getElementById("addModule")
-                                    );
-                                    modal2.show();
-                                  });
-                              </script>
+                              
                             </div>
                           </div>
                           <div class="mb-4" style="color: #919faf">
@@ -630,7 +531,11 @@
                               rows="4"
                               placeholder="Test Case Title"
                               style="color: #757575"
+                              required
                             ></textarea>
+                            <div class="invalid-feedback">
+                              Please Enter Test Case Title.
+                            </div>
                           </div>
                           <div class="mb-4" style="color: #919faf">
                             <label for="TestcaseDescription" class="form-label"
@@ -1185,6 +1090,120 @@
                   </div>
                 </div>
               </div>
+              </form>
+              <form action="" class="needs-validation" novalidate>
+                <div
+                  class="modal fade"
+                  id="addModule"
+                  tabindex="-1"
+                  aria-labelledby="addModuleLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div
+                      class="modal-content border border-1 rounded-2"
+                    >
+                      <div class="modal-header">
+                        <div
+                          class="modal-title fs-5 fw-semibold text-dark"
+                          id="addModuleLabel"
+                          style="margin-left: 6rem"
+                        >
+                          Add Module / Add Sub Module
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-4">
+                          <label
+                            for="brow-module"
+                            class="form-label d-flex justify-content-between"
+                          >
+                            <div>Select Module</div>
+                          </label>
+                          <input
+                            list="brow-module"
+                            class="form-select border-0 bg-light"
+                          />
+                          <datalist id="brow-module">
+                            <option value="Home page"></option>
+                            <option
+                              value="Header section"
+                            ></option>
+                            <option
+                              value="Footer section"
+                            ></option>
+                            <option value="Pricing"></option>
+                            <option value="Blog"></option>
+                            <option value="Contact"></option>
+                          </datalist>
+                        </div>
+                        <div class="mb-4" style="color: #919faf">
+                          <label
+                            for="form-test-case-title"
+                            class="form-label d-flex justify-content-between"
+                          >
+                            <div>
+                              Module Name
+                              <span style="color: #f44336"
+                                >*</span
+                              >
+                            </div>
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control border-0 bg-light"
+                            id="form-test-case-title"
+                            placeholder="Please Enter Module Name"
+                            style="color: #757575"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            Please Enter Module Name.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="submit"
+                          class="btn btn-danger mx-2"
+                        >
+                          Save
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger mx-2"
+                        >
+                          Save & Continue
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger mx-2"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  document
+                    .getElementById("btnAddModule")
+                    .addEventListener("click", function () {
+                      // Mở modal 2 khi nhấp vào nút
+                      var modal2 = new bootstrap.Modal(
+                        document.getElementById("addModule")
+                      );
+                      modal2.show();
+                    });
+                </script>
+              </form>
             </div>
 
             <button
@@ -1785,5 +1804,6 @@
     ></script>
 
     <script src="../scripts/test_cases.js"></script>
+    <script src="../scripts/shared-script.js"></script>
   </body>
 </html>

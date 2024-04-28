@@ -8,6 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="icon" href="../assets/images/logo.png">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -202,20 +203,29 @@
                         <strong>Note:</strong> When you create a user as an Administrator, all the projects will be assigned automatically to the user.
                         When you create a user as a tester/developer in the system, you have to assign them to the project to give access.
                     </div>
-                    <form action="">
+                    <form class="needs-validation" action="" novalidate>
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="fFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                                    <input class="form-control" id="fFirstName" name="first-name" type="text" placeholder="First Name" aria-label="default input example">        
+                                    <input class="form-control" id="fFirstName" name="first-name" type="text" placeholder="First Name" aria-label="default input example" required>        
+                                    <div class="invalid-feedback">
+                                        Please enter First Name.
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="fLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                                    <input class="form-control" id="fLastName" name="last-name" type="text" placeholder="Last Name" aria-label="default input example">        
+                                    <input class="form-control" id="fLastName" name="last-name" type="text" placeholder="Last Name" aria-label="default input example" required>        
+                                    <div class="invalid-feedback">
+                                        Please enter Last Name.
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="fEmail" class="form-label">Email <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" id="fEmail" name="email" placeholder="Email">
+                                    <input type="email" class="form-control" id="fEmail" name="email" placeholder="Email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter Email.
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="fLanguage" class="form-label">Language</label>
@@ -260,10 +270,13 @@
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="fAccessType" class="form-label">Access Type <span class="text-danger">*</span></label>
-                                    <select class="form-select" id="fAccessType" name="access-type" aria-label="Default select example">
+                                    <select class="form-select" id="fAccessType" name="access-type" aria-label="Default select example" required>
                                         <option selected value="Tester">Tester</option>
                                         <option value="Developer">Developer</option>
-                                      </select>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select Access Type.
+                                    </div>
                                 </div>
                                 <p class="mb-0"><strong>Tester</strong> - Users with access type Tester will have access to Dashboard and Projects Assigned to them(Overview, Requirements, Attachments, Releases, Modules, Test Cases, Test Plans, Test Runs, Issues, Jira Issues, Reports, Project Integration Mapping)</p>
                                 <p class="mb-0"><strong>Developer</strong> - Users with access type Developer will have access only to Issues of Projects Assigned to them.
@@ -348,5 +361,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="../scripts/administration-add-user.js"></script>
+        <script src="../scripts/shared-script.js"></script>
     </body>
 </html>
