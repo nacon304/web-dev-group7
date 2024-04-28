@@ -1,799 +1,942 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>ShareBug - Project home</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="icon" href="../assets/images/logo.png">
+  <head>
+    <title>ShareBug - Project home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="../assets/images/logo.png" />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-    
-        <link rel="stylesheet" href="../styles/shared-styles.css">
-        <link rel="stylesheet" href="../styles/project-home.css">
+    <link rel="stylesheet" href="../styles/shared-styles.css" />
+    <link rel="stylesheet" href="../styles/project-home.css" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex px-3">
-                    <a class="navbar-brand" href="#">
-                        <img src="../assets/images/logo.png" alt="" class="logo">
-                        <a class="navbar-brand mb-0 h1">ShareBug</a>
-                    </a>
-    
-                    <div class="container-fluid">
-                        <span class="navbar-text">Last Data refresh at: 28th June 2022 at 8:37 PM</span>
-                    </div>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex px-3">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/images/logo.png" alt="" class="logo" />
+          <a class="navbar-brand mb-0 h1">ShareBug</a>
+        </a>
 
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="container-fluid border-start border-2 dark-mode">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                    <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
-                                </div>
-                            </li>
+        <div class="container-fluid">
+          <span class="navbar-text"
+            >Last Data refresh at: 28th June 2022 at 8:37 PM</span
+          >
+        </div>
 
-                            <li class="nav-item dropdown border-start border-2 px-2 py-2" style="width: 15rem;">
-                                <select class="form-select" style="background-color: #f5f5f5;" aria-label="Default select example">
-                                <option selected>Web TMS Group 7</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                </select>
-                            </li>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="container-fluid border-start border-2 dark-mode">
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >Dark mode</label
+                >
+              </div>
+            </li>
 
-                            <li class="nav-item dropdown border-start border-2 contact">
-                                <a
-                                    class="nav-link dropdown-toggle ms-2 me-2"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    ><i class="bi bi-envelope fs-3 align-middle"></i></a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown border-start border-2 pe-0 language">
-                                <a
-                                    class="nav-link dropdown-toggle ms-2 me-2"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >
-                                    <img src="../assets/images/Flag_of_the_United_States.png" alt="" class="img-language">
-                                    English</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
+            <li
+              class="nav-item dropdown border-start border-2 px-2 py-2"
+              style="width: 15rem"
+            >
+              <select
+                class="form-select"
+                style="background-color: #f5f5f5"
+                aria-label="Default select example"
+              >
+                <option selected>Web TMS Group 7</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </li>
 
-                            <li class="nav-item dropdown border-start border-2 language">
-                                <a
-                                    class="nav-link dropdown-toggle ms-2 me-2"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >
-                                    <i class="bi bi-person-circle fs-3 align-middle"></i>
-                                    </a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>                            
-                        </ul>
-                        
-                    </div>
-            </nav>
-        </header>
-        <main>
-            <div class="menu border border-secondary-subtle">
-                <ul>
-                  <li class="menu-item">
-                    <a href="dashboard.html">
-                      <img
-                        src="../assets/images/dashboard.png"
-                        alt=""
-                        class="menu-icon"
-                      />
-                      <p>Dashboard</p>
-                    </a>
+            <li class="nav-item dropdown border-start border-2 contact">
+              <a
+                class="nav-link dropdown-toggle ms-2 me-2"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><i class="bi bi-envelope fs-3 align-middle"></i
+              ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown border-start border-2 pe-0 language">
+              <a
+                class="nav-link dropdown-toggle ms-2 me-2"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="../assets/images/Flag_of_the_United_States.png"
+                  alt=""
+                  class="img-language"
+                />
+                English</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown border-start border-2 language">
+              <a
+                class="nav-link dropdown-toggle ms-2 me-2"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-circle fs-3 align-middle"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="menu border border-secondary-subtle">
+        <ul>
+          <li class="menu-item">
+            <a href="dashboard.html">
+              <img
+                src="../assets/images/dashboard.png"
+                alt=""
+                class="menu-icon"
+              />
+              <p>Dashboard</p>
+            </a>
+          </li>
+
+          <li class="menu-item selected-menu-item">
+            <a href="project-list.html">
+              <img
+                src="../assets/images/project-list.png"
+                alt=""
+                class="menu-icon"
+              />
+              <p>Project List</p>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="administration-view.html">
+              <img
+                src="../assets/images/administration.png"
+                alt=""
+                class="menu-icon"
+              />
+              <p>Administration</p>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">
+              <img
+                src="../assets/images/managerial-reports.png"
+                alt=""
+                class="menu-icon"
+              />
+              <p>Managerial Reports</p>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">
+              <img src="../assets/images/help.png" alt="" class="menu-icon" />
+              <p>Help</p>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">
+              <img
+                src="../assets/images/tutorials.png"
+                alt=""
+                class="menu-icon"
+              />
+              <p>Tutorials</p>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">
+              <i class="bi bi-gear" class="menu-icon" style="color: red"></i>
+              <p>Setting</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <ul class="nav nav-underline menu-2 d-flex">
+          <li class="nav-item">
+            <a
+              class="nav-link mx-2 active border-danger"
+              aria-current="page"
+              href="project-home.html"
+              >Overview</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="requirement.html">Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="release.html">Releases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="modules-view.html">Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="test_cases.html">Test Cases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="test-runs-view.html">Test Runs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="test-plan.html">Test Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="issues-view.html">Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="reports-view.html">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="project-home.html">Activity log</a>
+          </li>
+        </ul>
+
+        <div class="container bg-white rounded my-3">
+          <div class="row d-flex justify-content-between">
+            <div class="col sm-8 d-flex flex-row align-items-center">
+              <a href="../pages/project-list.html" class="mx-2 project-name"
+                >My Business Project</a
+              >
+
+              <i class="bi bi-chevron-right"></i>
+
+              <span class="mx-2 address-component">Overview</span>
+            </div>
+            <div class="col sm-4 d-flex justify-content-end">
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-seconary dropdown-toggle quick-menu m-2"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="bi bi-grid-3x3"></i> Quick Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item quick-menu" href="#"
+                      ><i class="bi bi-brush"></i> Edit project</a
+                    >
                   </li>
-        
-                  <li class="menu-item selected-menu-item">
-                    <a href="project-list.html">
-                      <img
-                        src="../assets/images/project-list.png"
-                        alt=""
-                        class="menu-icon"
-                      />
-                      <p>Project List</p>
-                    </a>
+                  <li>
+                    <a class="dropdown-item quick-menu" href="#"
+                      ><i class="bi bi-person"></i> View assignees</a
+                    >
                   </li>
-        
-                  <li class="menu-item">
-                    <a href="administration-view.html">
-                      <img
-                        src="../assets/images/administration.png"
-                        alt=""
-                        class="menu-icon"
-                      />
-                      <p>Administration</p>
-                    </a>
+                  <li>
+                    <a class="dropdown-item quick-menu" href="#"
+                      ><i class="bi bi-cloud-arrow-up"></i> Import
+                      requirements</a
+                    >
                   </li>
-        
-                  <li class="menu-item">
-                    <a href="#">
-                      <img
-                        src="../assets/images/managerial-reports.png"
-                        alt=""
-                        class="menu-icon"
-                      />
-                      <p>Managerial Reports</p>
-                    </a>
+                  <li>
+                    <a class="dropdown-item quick-menu" href="#"
+                      ><i class="bi bi-cloud-arrow-up"></i> Import test cases</a
+                    >
                   </li>
-        
-                  <li class="menu-item">
-                    <a href="#">
-                      <img src="../assets/images/help.png" alt="" class="menu-icon" />
-                      <p>Help</p>
-                    </a>
-                  </li>
-        
-                  <li class="menu-item">
-                    <a href="#">
-                      <img
-                        src="../assets/images/tutorials.png"
-                        alt=""
-                        class="menu-icon"
-                      />
-                      <p>Tutorials</p>
-                    </a>
-                  </li>
-        
-                  <li class="menu-item">
-                    <a href="#">
-                      <i class="bi bi-gear" class="menu-icon" style="color: red"></i>
-                      <p>Setting</p>
-                    </a>
+                  <li>
+                    <a class="dropdown-item quick-menu" href="#"
+                      ><i class="bi bi-passport"></i> Reports</a
+                    >
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="content">
-                <ul class="nav nav-underline menu-2 d-flex">
-                    <li class="nav-item">
-                      <a class="nav-link mx-2 active border-danger " aria-current="page" >Overview</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-2" href="#">Requirements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Releases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Modules</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Test Cases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Test Runs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Test Plans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Issues</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Reports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Activity log</a>
-                      </li>
-                </ul> 
-                
-                <div class="container bg-white rounded my-3">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col sm-8 d-flex flex-row align-items-center">
-                            <a href="../pages/project-list.html" class="mx-2 project-name">My Business Project</a>
+        <div class="container my-3 py-2" id="cards-area">
+          <div class="row h-100">
+            <div class="col-sm-9 h-100" id="content-col">
+              <div class="row mb-3" id="overview-row">
+                <div class="col-sm-4 ps-0">
+                  <div class="container h-100 w-100 bg-white rounded p-2">
+                    <div
+                      class="container d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="container d-flex flex-column align-items-center"
+                        id="project-info"
+                      >
+                        <img
+                          width="100px"
+                          src="../assets/images/Flag_of_the_United_States.png"
+                          alt=""
+                          class="project-icon"
+                        />
+                        <h5>My Business Project</h5>
+                        <p class="text-muted fw-bold">Created by John Doe</p>
+                        <p class="text-muted">Created on 28th June 2022</p>
+                      </div>
 
-                            <i class="bi bi-chevron-right"></i>
-
-                            <span class="mx-2 address-component">Overview</span>
+                      <div class="container d-flex justify-content-between">
+                        <div><h6>Project key</h6></div>
+                        <div class="rounded-pill bg-dark-subtle w-auto px-3">
+                          keygoeshere
                         </div>
-                        <div class="col sm-4 d-flex justify-content-end">
-                            <div class="dropdown">
-                                <button class="btn btn-outline-seconary dropdown-toggle quick-menu m-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                    <i class="bi bi-grid-3x3"></i> Quick Menu
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-brush"></i> Edit project</a></li>
-                                    <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-person"></i> View assignees</a></li>
-                                    <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-cloud-arrow-up"></i> Import requirements</a></li>
-                                    <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-cloud-arrow-up"></i> Import test cases</a></li>
-                                    <li><a class="dropdown-item quick-menu" href="#"><i class="bi bi-passport"></i> Reports</a></li>
-                                </ul>
-                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div
+                    class="container h-100 w-100 bg-white rounded p-2 position-relative"
+                  >
+                    <h6>Open Release(s) Status</h6>
 
-                        </div>
-                    </div> 
-                
-               </div>
-                
-                <div class="container my-3 py-2" id="cards-area">
-                    <div class="row h-100">
-                        <div class="col-sm-9 h-100" id="content-col">
-                            <div class="row mb-3" id="overview-row">
-                                <div class="col-sm-4 ps-0">
-                                    <div class="container h-100 w-100 bg-white rounded p-2">
-                                        <div class="container d-flex flex-column justify-content-between">
-                                            <div class="container d-flex flex-column align-items-center" id="project-info">
-                                                <img width="100px" src="../assets/images/Flag_of_the_United_States.png" alt="" class="project-icon">
-                                                <h5>My Business Project</h5>
-                                                <p class="text-muted fw-bold">Created by John Doe</p>
-                                                <p class="text-muted">Created on 28th June 2022</p>
-                                            </div>
-                                                
-                                            <div class="container d-flex justify-content-between">
-                                                <div> <h6>Project key</h6></div>
-                                                <div class="rounded-pill bg-dark-subtle w-auto px-3">
-                                                    keygoeshere
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div
+                      class="position-absolute top-50 start-50 translate-middle d-flex flex-row align-content-center"
+                    >
+                      <div class="icon-holder">
+                        <i class="bi bi-file-code fs-2"></i>
+                      </div>
+                      <div class="d-flex align-items-center text-muted">
+                        No status available
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                                            
-                                        
-                                    </div>
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="container h-100 w-100 bg-white rounded p-2 position-relative">
-                                        <h6>Open Release(s) Status</h6>
-
-                                        <div class="position-absolute top-50 start-50 translate-middle d-flex flex-row align-content-center">
-                                            <div class="icon-holder">
-                                                <i class="bi bi-file-code fs-2"></i>
-                                            </div>
-                                            <div class="d-flex align-items-center text-muted">
-                                                No status available
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-
-                            <div class="row" id="resource-row">
-                                <div class="col-sm-3 ps-0">
-                                    <div class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1"> 
-                                        <a href="#" class="container d-flex flex-column align-items-center">
-                                            <div class="icon-holder circle mx-auto" style="background: #fef8f5">
-                                                <img
-                                                  src="../assets/images/releases.svg"
-                                                  alt=""
-                                                  class="centered-image"
-                                                />
-                                            </div>
-                                            <!-- <div class="icon-holder">
+              <div class="row" id="resource-row">
+                <div class="col-sm-3 ps-0">
+                  <div
+                    class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1"
+                  >
+                    <a
+                      href="#"
+                      class="container d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="icon-holder circle mx-auto"
+                        style="background: #fef8f5"
+                      >
+                        <img
+                          src="../assets/images/releases.svg"
+                          alt=""
+                          class="centered-image"
+                        />
+                      </div>
+                      <!-- <div class="icon-holder">
                                                 <i class="bi bi-unity fs-3"></i>
                                             </div> -->
 
-                                            <div id="no-of-releases">
-                                                <h4>2</h4>
-                                            </div>
+                      <div id="no-of-releases">
+                        <h4>2</h4>
+                      </div>
 
-                                            <div class="container-title">
-                                                <h6>Releases</h6>
-                                            </div>
-                                        </a>
+                      <div class="container-title">
+                        <h6>Releases</h6>
+                      </div>
+                    </a>
 
-                                        <div class="item-list overflow-auto mt-5 h-50">
-                                            <a href="#" >
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <!-- <div class="icon-holder">
+                    <div class="item-list overflow-auto mt-5 h-50">
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <!-- <div class="icon-holder">
                                                         <i class="bi bi-unity"></i>
                                                     </div> -->
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/releases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Release 1.23
-                                                    </div>
-                                                </div>
-                                            </a>
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/releases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
 
-                                            <a href="#">
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <!-- <div class="icon-holder">
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Release 1.23
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <!-- <div class="icon-holder">
                                                         <i class="bi bi-unity"></i>
                                                     </div> -->
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/releases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/releases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
 
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Release 2.45
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>   
-                                    </div>
-                                </div> 
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Release 2.45
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                                <div class="col-sm-3 ps-0">
-                                    <div class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1">
-                                        <a href="#" class="container d-flex flex-column align-items-center">
-                                            <div class="icon-holder circle mx-auto" style="background: #effff0">
-                                                <img
-                                                  src="../assets/images/test_cases.svg"
-                                                  alt=""
-                                                  class="centered-image"
-                                                />
-                                            </div>
-                                            <!-- <div class="icon-holder">
+                <div class="col-sm-3 ps-0">
+                  <div
+                    class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1"
+                  >
+                    <a
+                      href="#"
+                      class="container d-flex flex-column align-items-center"
+                    >
+                      <div
+                        class="icon-holder circle mx-auto"
+                        style="background: #effff0"
+                      >
+                        <img
+                          src="../assets/images/test_cases.svg"
+                          alt=""
+                          class="centered-image"
+                        />
+                      </div>
+                      <!-- <div class="icon-holder">
                                                 <i class="bi bi-clipboard2-data fs-3"></i>
                                             </div> -->
 
-                                            <div id="no-of-test-cases">
-                                                <h4>7</h4>
-                                            </div>
+                      <div id="no-of-test-cases">
+                        <h4>7</h4>
+                      </div>
 
-                                            <div class="container-title">
-                                                <h6>Test cases</h6>
-                                            </div>
-                                        </a>
+                      <div class="container-title">
+                        <h6>Test cases</h6>
+                      </div>
+                    </a>
 
-                                        <div class="item-list overflow-auto mt-5 h-50">
-                                            <a href="#" >
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <!-- <div class="icon-holder">
+                    <div class="item-list overflow-auto mt-5 h-50">
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <!-- <div class="icon-holder">
                                                         <i class="bi bi-clipboard2-data-fill"></i>
                                                     </div> -->
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Test case TC-345
-                                                    </div>
-                                                </div>
-                                            </a>
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
 
-                                            <a href="#">
-                                            <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-345
+                          </div>
+                        </div>
+                      </a>
 
-                                                <div class="release-name d-flex flex-row align-content-center">
-                                                    Test case TC-354
-                                                </div>
-                                            </div>
-                                            </a>
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
 
-                                            <a href="#">
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Test case TC-423
-                                                    </div>
-                                                </div>
-                                            </a>
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-354
+                          </div>
+                        </div>
+                      </a>
 
-                                            <a href="#">
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Test case TC-532    
-                                                    </div>
-                                                </div>
-                                            </a>
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
 
-                                            <a href="#">
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Test case TC-572
-                                                    </div>
-                                                </div>
-                                            </a>
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-423
+                          </div>
+                        </div>
+                      </a>
 
-                                            <a href="#">
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Test case TC-678
-                                                    </div>
-                                                </div>
-                                            </a>
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
 
-                                            <a href="#">
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/test_cases.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Test case TC-999
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> 
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-532
+                          </div>
+                        </div>
+                      </a>
 
-                                <div class="col-sm-3 ps-0">
-                                    <div class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1">
-                                        <a href="#" class="container d-flex flex-column align-items-center">
-                                            <div class="circle mx-auto" style="background: #fef8f5">
-                                                <img
-                                                  src="../assets/images/test_runs.svg"
-                                                  alt=""
-                                                  class="centered-image"
-                                                />
-                                              </div>
-                                            <!-- <div class="icon-holder">
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
+
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-572
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
+
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-678
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/test_cases.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
+
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Test case TC-999
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 ps-0">
+                  <div
+                    class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1"
+                  >
+                    <a
+                      href="#"
+                      class="container d-flex flex-column align-items-center"
+                    >
+                      <div class="circle mx-auto" style="background: #fef8f5">
+                        <img
+                          src="../assets/images/test_runs.svg"
+                          alt=""
+                          class="centered-image"
+                        />
+                      </div>
+                      <!-- <div class="icon-holder">
                                                 <i class="bi bi-clipboard-check fs-3"></i>
                                             </div> -->
 
-                                            <div id="no-of-test-runs">
-                                                <h4>0</h4>
-                                            </div>
+                      <div id="no-of-test-runs">
+                        <h4>0</h4>
+                      </div>
 
-                                            <div class="container-title">
-                                                <h6>Test runs</h6>
-                                            </div>
-                                        </a>
+                      <div class="container-title">
+                        <h6>Test runs</h6>
+                      </div>
+                    </a>
 
-                                        <div class="item-list overflow-auto mt-5 h-50">
-                                            <div class="d-flex flex-row align-items-center justify-content-center text-muted">
-                                                No test runs available
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
+                    <div class="item-list overflow-auto mt-5 h-50">
+                      <div
+                        class="d-flex flex-row align-items-center justify-content-center text-muted"
+                      >
+                        No test runs available
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                                <div class="col-sm-3 ps-0">
-                                    <div class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1">
-                                        <a href="#" class="container d-flex flex-column align-items-center">
-                                            <div class="circle mx-auto" style="background: #f6f1ff">
-                                                <img
-                                                  src="../assets/images/issues.svg"
-                                                  alt=""
-                                                  class="centered-image"
-                                                />
-                                              </div>
-                                            <!-- <div class="icon-holder">
+                <div class="col-sm-3 ps-0">
+                  <div
+                    class="container bg-white rounded h-100 d-flex flex-column justify-content-between py-3 px-1"
+                  >
+                    <a
+                      href="#"
+                      class="container d-flex flex-column align-items-center"
+                    >
+                      <div class="circle mx-auto" style="background: #f6f1ff">
+                        <img
+                          src="../assets/images/issues.svg"
+                          alt=""
+                          class="centered-image"
+                        />
+                      </div>
+                      <!-- <div class="icon-holder">
                                                 <i class="bi bi-exclamation-triangle fs-3"></i>
                                             </div> -->
 
-                                            <div id="no-of-issues">
-                                                <h4>1</h4>
-                                            </div>
+                      <div id="no-of-issues">
+                        <h4>1</h4>
+                      </div>
 
-                                            <div class="container-title">
-                                                <h6>Issues</h6>
-                                            </div>
-                                        </a>
+                      <div class="container-title">
+                        <h6>Issues</h6>
+                      </div>
+                    </a>
 
-                                        <div class="item-list overflow-auto mt-5 h-50">
-                                            <a href="#" >
-                                                <div class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1">
-                                                    <!-- <div class="icon-holder">
+                    <div class="item-list overflow-auto mt-5 h-50">
+                      <a href="#">
+                        <div
+                          class="item-container container bg-body-secondary rounded-4 d-flex justify-content-between w-100 align-items-center my-1"
+                        >
+                          <!-- <div class="icon-holder">
                                                         <i class="bi bi-exclamation-triangle-fill"></i>
                                                     </div> -->
-                                                    <div style="width: 2rem; height: 2rem; position: relative;">
-                                                        <img
-                                                          src="../assets/images/issues.svg"
-                                                          alt=""
-                                                          class="centered-image"
-                                                        />
-                                                    </div>
-    
-                                                    <div class="release-name d-flex flex-row align-content-center">
-                                                        Issue I-23
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                                
-                                
+                          <div
+                            style="
+                              width: 2rem;
+                              height: 2rem;
+                              position: relative;
+                            "
+                          >
+                            <img
+                              src="../assets/images/issues.svg"
+                              alt=""
+                              class="centered-image"
+                            />
+                          </div>
+
+                          <div
+                            class="release-name d-flex flex-row align-content-center"
+                          >
+                            Issue I-23
+                          </div>
                         </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                        <div class="col-sm-3" id="history-col">
-                                <div class="bg-white rounded h-75 px-3">
-                                    <h6 class="py-3">Activity log</h6>
-                                    
-                                    <div class="container flex-column overflow-auto h-75">
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 28, 2024 23:40
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Al Pacino
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 2 reports</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                            
-                                        </div> 
-                                        
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 27, 2024 12:49
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Daniel Day-Lewis
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Edited requirement R-32</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div>  
-    
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 23, 2024 04:23
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Humphrey Bogart
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 3 test cases</p>
-                                                <p class="m-0">Edited 1 release</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div>  
-    
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 23, 2024 04:23
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Humphrey Bogart
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 3 test cases</p>
-                                                <p class="m-0">Edited 1 release</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div> 
-    
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 23, 2024 04:23
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Humphrey Bogart
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 3 test cases</p>
-                                                <p class="m-0">Edited 1 release</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div> 
-    
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 23, 2024 04:23
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Humphrey Bogart
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 3 test cases</p>
-                                                <p class="m-0">Edited 1 release</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div> 
-    
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 23, 2024 04:23
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Humphrey Bogart
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 3 test cases</p>
-                                                <p class="m-0">Edited 1 release</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div> 
-    
-                                        <div class="history-item d-flex flex-column rounded border p-1 m-2">
-                                            <div class="text-muted history-item-timestamp">
-                                                April 23, 2024 04:23
-                                            </div>
-    
-                                            <div class="history-item-author text-muted">
-                                                <i class="bi bi-person"></i> Humphrey Bogart
-                                            </div>
-                                            <div class="d-flex flex-column history-item-detail">
-                                                <p class="m-0">Added 3 test cases</p>
-                                                <p class="m-0">Edited 1 release</p>
-                                            </div> 
-                                            
-                                            
-                                            
-                                        </div> 
-                                    </div>
-    
-                                </div>
+            <div class="col-sm-3" id="history-col">
+              <div class="bg-white rounded h-75 px-3">
+                <h6 class="py-3">Activity log</h6>
 
-                        </div>
-
-
-
+                <div class="container flex-column overflow-auto h-75">
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 28, 2024 23:40
                     </div>
 
-                </div>
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Al Pacino
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 2 reports</p>
+                    </div>
+                  </div>
 
-                
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 27, 2024 12:49
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Daniel Day-Lewis
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Edited requirement R-32</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 23, 2024 04:23
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Humphrey Bogart
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 3 test cases</p>
+                      <p class="m-0">Edited 1 release</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 23, 2024 04:23
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Humphrey Bogart
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 3 test cases</p>
+                      <p class="m-0">Edited 1 release</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 23, 2024 04:23
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Humphrey Bogart
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 3 test cases</p>
+                      <p class="m-0">Edited 1 release</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 23, 2024 04:23
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Humphrey Bogart
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 3 test cases</p>
+                      <p class="m-0">Edited 1 release</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 23, 2024 04:23
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Humphrey Bogart
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 3 test cases</p>
+                      <p class="m-0">Edited 1 release</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-item d-flex flex-column rounded border p-1 m-2"
+                  >
+                    <div class="text-muted history-item-timestamp">
+                      April 23, 2024 04:23
+                    </div>
+
+                    <div class="history-item-author text-muted">
+                      <i class="bi bi-person"></i> Humphrey Bogart
+                    </div>
+                    <div class="d-flex flex-column history-item-detail">
+                      <p class="m-0">Added 3 test cases</p>
+                      <p class="m-0">Edited 1 release</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-            </content>
-        </main>
+    <footer>
+      <!-- place footer here -->
+      <div
+        class="container-fluid bg-white d-flex justify-content-between align-items-center"
+      >
+        <div class="footer-left d-flex">
+          <a href="#" class="m-1"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="m-1"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="m-1"><i class="bi bi-youtube"></i></a>
+        </div>
 
-        <footer>
-            <!-- place footer here -->
-            <div class="container-fluid bg-white d-flex justify-content-between align-items-center">
-                <div class="footer-left d-flex">
-                    <a href="#" class="m-1"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="m-1"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="m-1"><i class="bi bi-youtube"></i></a>
-                </div>
+        <div class="footer-mid text-center">
+          <p class="m-0">Copyright @ 2024</p>
+          <p class="m-0">Version 2.2.4</p>
+        </div>
 
-                <div class="footer-mid text-center">
-                    <p class="m-0">Copyright @ 2024</p>
-                    <p class="m-0">Version 2.2.4</p>
-                </div>
+        <div class="footer-right">
+          <span>Terms & Conditions</span>
+        </div>
+      </div>
+    </footer>
 
-                <div class="footer-right">
-                    <span>Terms & Conditions</span>
-                </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-            </div>
-        </footer>
-
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-
-        
-
-    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
