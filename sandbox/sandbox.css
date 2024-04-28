@@ -1,15 +1,125 @@
-
-.grid-view
-{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 5%;
-  justify-content: center;
-
-  
+.divider {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 
-.list-view
-{
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.tabs li {
+  margin-right: 20px;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.tabs a:hover {
+  color: #23527c;
+}
+
+.card.grid-view
+{
+  display: flexbox;
+  width: 25%;
+}
+
+#cards-wrapper-cf.grid-view .card .card-body
+{
+  > *
+  {
+    margin: 0.5ex;
+  }
+
+  .card-project-key
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+  }
+
+  .card-project-creation > *
+  {
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    > *
+    {
+      margin: 0.5ex;
+    }
+  }
+
+
+
+  .card-project-stats
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .card-project-actions
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+.field-label
+{
+  font-weight: bold;
+}
+
+
+#cards-wrapper-cf.list-view .card .card-body
+{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .card-project-description
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-project-creation
+  {
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 1ex;
+    > *
+    {
+      margin: 1ex;
+    }
+  }
+
+  .card-project-stats
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > *
+    {
+      margin: 0.5ex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }

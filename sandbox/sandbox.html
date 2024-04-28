@@ -15,7 +15,11 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
+            
         />
+
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <link rel="stylesheet" href="sandbox.css" />
 
@@ -35,396 +39,162 @@
             </div>
 
             <div class="content">
-                <div class="wrapper" id="items-wrapper">
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
-                                </div>
-
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
-                                </div>
-                            </div>
-
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-project-name">
+                            <h4>Project name</h4>
                         </div>
                     </div>
-
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
+                    <div class="card-body">
+                        <div class="card-project-description">
+                            <div class="card-project-creation">
+                                <div class="card-project-creation-date">
+                                    <div class="field-label">
+                                        Created on
+                                    </div>
+                                    <div class="field-value">
+                                        2021-10-01
+                                    </div>
+                                </div>
+                                <div class="card-project-creation-author">
+                                    <div class="field-label">
+                                        Created by 
+                                    </div>
+                                    <div class="field-value">
+                                        John Doe
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
+                            <div class="card-project-key">
+                                <div class="field-label">
+                                    Project key
+                                </div>
+                                <div class="field-value">
+                                    PRJ-001
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
+
+                        <div class="card-project-stats">
+                            <div class="card-project-test-cases">
+                                <div class="field-label">
+                                    Test cases
                                 </div>
 
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
+                                <div class="field-value">
+                                    10
                                 </div>
                             </div>
 
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
+                            <div class="card-project-test-runs">
+                                <div class="field-label">
+                                    Test runs
                                 </div>
 
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
+                                <div class="field-value">
+                                    5
                                 </div>
                             </div>
 
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
+                            <div class="card-project-issues">
+                                <div class="field-label">
+                                    Issues
+                                </div>
+
+                                <div class="field-value">
+                                    3
+                                </div>
                             </div>
+                        </div> 
+
+                        <div class="card-project-actions">
+                            <button class="btn btn-outline-dark me-1">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="btn btn-outline-dark me-1">
+                                <i class="bi bi-trash"></i>
+                            </button>  
                         </div>
                     </div>
+                </div>
 
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
-                                </div>
-
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
-                                </div>
-                            </div>
-
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
+                <div class="card list-view">
+                    <div class="card-header">
+                        <div class="card-project-name">
+                            <h4>Project name</h4>
                         </div>
                     </div>
-
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
+                    <div class="card-body">
+                        <div class="card-project-description">
+                            <div class="card-project-creation">
+                                <div class="card-project-creation-date">
+                                    <div class="field-label">
+                                        Created on
+                                    </div>
+                                    <div class="field-value">
+                                        2021-10-01
+                                    </div>
+                                </div>
+                                <div class="card-project-creation-author">
+                                    <div class="field-label">
+                                        Created by 
+                                    </div>
+                                    <div class="field-value">
+                                        John Doe
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
+                            <div class="card-project-key">
+                                <div class="field-label">
+                                    Project key
+                                </div>
+                                <div class="field-value">
+                                    PRJ-001
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
+
+                        <div class="card-project-stats">
+                            <div class="card-project-test-cases">
+                                <div class="field-label">
+                                    Test cases
                                 </div>
 
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
+                                <div class="field-value">
+                                    10
                                 </div>
                             </div>
 
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
+                            <div class="card-project-test-runs">
+                                <div class="field-label">
+                                    Test runs
                                 </div>
 
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
+                                <div class="field-value">
+                                    5
                                 </div>
                             </div>
 
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
+                            <div class="card-project-issues">
+                                <div class="field-label">
+                                    Issues
                                 </div>
 
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
+                                <div class="field-value">
+                                    3
                                 </div>
                             </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
+                        </div> 
 
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
-                                </div>
-                            </div>
-
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="card-header">
-                            <div class="card-project-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-
-                            <div class="card-project-name">
-                                <h3>Project name</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-project-description card-item">
-                                <div class="card-project-creation card-item">
-                                    <b>Created on</b>
-                                    <p>28th June 2022</p>
-                                    <b>Created by</b>
-                                    <p>John Doe</p>
-                                </div>
-
-                                <div class="card-project-key card-item">
-                                    <b>Project key</b>
-                                    <p>PROJ-001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card-project-stats card-item card-item">
-                                <div class="stats-test-cases">
-                                    <b>Test cases</b>
-                                    <p>13</p>
-                                </div>
-
-                                <div class="stats-test-runs">
-                                    <b>Test runs</b>
-                                    <p>5</p>
-                                </div>
-
-                                <div class="stats-issues">
-                                    <b>Issues</b>
-                                    <p>213</p>
-                                </div>
-                            </div>
-
-                            <div class="card-project-actions card-item">
-                                <button class="btn btn-primary">View</button>
-                                <button class="btn btn-secondary">Edit</button>
-                            </div>
+                        <div class="card-project-actions">
+                            <button class="btn btn-outline-dark me-1">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="btn btn-outline-dark me-1">
+                                <i class="bi bi-trash"></i>
+                            </button>  
                         </div>
                     </div>
                 </div>
