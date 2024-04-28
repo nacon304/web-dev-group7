@@ -1,15 +1,28 @@
-
-.grid-view
-{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 5%;
-  justify-content: center;
-
-  
+.divider {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
 }
 
-.list-view
-{
-
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
+
+.tabs li {
+  margin-right: 20px;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.tabs a:hover {
+  color: #23527c;
+}
+
+.tab-content {
+  padding:
