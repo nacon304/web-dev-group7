@@ -226,6 +226,83 @@
                     </button>
                   </div>
                 </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-danger me-4"
+                    style="width: 8rem"
+                    onclick="window.location.href = './administration-add-user.html';"
+                  >
+                    <i class="bi bi-plus"></i> Add Users
+                  </button>
+                  <button
+                    class="btn btn-outline-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addProject"
+                  >
+                    <i class="bi bi-plus"></i> Add Project
+                  </button>
+                  <form action="" class="needs-validation" novalidate>
+                    <div class="modal fade" id="addProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h6 class="modal-title" id="exampleModalLabel">Add Project</h6>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="col mb-3">
+                                <input
+                                  class="form-control"
+                                  list="datalistWorkspace"
+                                  name="workspace"
+                                  placeholder="Default Workspace"
+                                />
+                                <datalist id="datalistWorkspace">
+                                  <option value="Default Workspace"></option>
+
+                                </datalist>
+                              </div>
+                              <div class="mb-3">
+                                  
+                                  <input
+                                  type="text"
+                                  class="form-control bg-light"
+                                  name="project-name"
+                                  placeholder="Project Name *"
+                                  style="color: #757575"
+                                  required
+                                  />
+                                  <div class="invalid-feedback">
+                                  Please Enter Project Name.
+                                  </div>
+
+                              </div>
+                              <div class="mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="fSampleData">
+                                <label class="form-check-label" for="fSampleData">
+                                  Create project with sample data
+                                </label>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-danger mx-2">
+                                  Save
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-danger mx-2"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Cancel
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </form>
+                </div>
               </div>
 
               <div class="row align-items-center">
@@ -234,7 +311,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Search"
+                      placeholder="Search By Project Name"
                       aria-label="Search"
                       id="search-input"
                     />
@@ -778,5 +855,6 @@
         var queryText = inputElement.value;
       }
     </script>
+    <script src="../scripts/shared-script.js"></script>
   </body>
 </html>

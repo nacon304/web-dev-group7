@@ -264,6 +264,118 @@
                   <i class="bi bi-plus"></i> Add release
                 </button>
               </div>
+              <form action="" class="needs-validation" novalidate>
+                <div class="modal fade" id="releaseDialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h6 class="modal-title" id="exampleModalLabel">Add Release</h6>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3 d-flex">
+                                <label
+                                  for="form-test-plan-name"
+                                  class="form-label d-flex justify-content-between me-5"
+                                >
+                                    Name <span style="color: #f44336">*</span>
+                                </label>
+                                <div class="w-100">
+                                    <input
+                                    type="text"
+                                    class="form-control bg-light"
+                                    id="form-test-plan-name"
+                                    placeholder="Release Name *"
+                                    style="color: #757575"
+                                    required
+                                    />
+                                    <div class="invalid-feedback">
+                                    Please Enter Release Name.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="fStartDate">From: </label>
+                                        <input
+                                        class="form-control bg-light"
+                                        id="fStartDate"
+                                        name="start-date"
+                                        type="date"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <label for="fEndDate">To: </label>
+                                        <input
+                                        class="form-control bg-light"
+                                        id="fEndDate"
+                                        name="end-date"
+                                        type="date"
+                                        />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="my-2">
+                                <label for="">Attachments</label>
+                                <div
+                                  class="upload-file my-2 d-flex justify-content-center"
+                                  style="border: dashed 1px #dc3545 !important"
+                                >
+                                  <div
+                                    class="mt-0 col-4 d-flex justify-content-center me-2"
+                                  >
+                                    <img
+                                      src="../assets/images/import_file.svg"
+                                      alt="Import Files"
+                                      style="width: 80px"
+                                    />
+                                  </div>
+                                  <div class="col-4 py-3">
+                                    <div
+                                      class="d-block text-center align-items-center"
+                                      style="width: 80%"
+                                    >
+                                      <button
+                                        type="button"
+                                        class="btn btn-outline-danger mb-2 w-100"
+                                      >
+                                        Drop Files
+                                      </button>
+                                      <p class="mt-2 fs-6" style="color: #999">
+                                        Drop files here
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <p class=" small">
+                                  File size should be less than 2MB and allowed
+                                  formats are
+                                  <strong
+                                    >.xls, .xlsx, .doc, .docx, .txt, .pdf, .csv,
+                                    .log, .zip, .mp4, .webm, .ipynb, .odf, .gif,
+                                    .png, .jpg, .ppt, .pptx, .mov</strong
+                                  >
+                                </p>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger mx-2">
+                                Save
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-danger mx-2"
+                                data-bs-dismiss="modal"
+                              >
+                                Cancel
+                              </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </form>
 
               <div class="btn-show-archived">
                 <button class="btn btn-outline-danger" onclick="showArchived()">
@@ -861,5 +973,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/shared-script.js"></script>
   </body>
 </html>
