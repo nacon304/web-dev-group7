@@ -21,3 +21,11 @@ a {
     color: red;
     border-width: 5px;
 }
+
+.menu-2 {
+    margin: 1rem 2rem;
+}
+
+.menu-2 li a{
+    color: black;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ShareBug - Requirement Import</title>
+    <title>ShareBug - Test Cases - Import</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -56,21 +56,6 @@
                   >Dark mode</label
                 >
               </div>
-            </li>
-            <li
-              class="nav-item dropdown border-start border-2 px-2 py-2"
-              style="width: 15rem"
-            >
-              <select
-                class="form-select"
-                style="background-color: #f5f5f5"
-                aria-label="Default select example"
-              >
-                <option selected>Web TMS Group 7</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
             </li>
             <li class="nav-item dropdown border-start border-2 contact">
               <a
@@ -209,12 +194,7 @@
             <a class="nav-link mx-2" href="project-home.html">Overview</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link mx-2 active border-danger"
-              aria-current="page"
-              href="requirement.html"
-              >Requirements</a
-            >
+            <a class="nav-link mx-2" href="requirement.html">Requirements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2" href="release.html">Releases</a>
@@ -223,7 +203,12 @@
             <a class="nav-link mx-2" href="modules-view.html">Modules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="test_cases.html">Test Cases</a>
+            <a
+              class="nav-link mx-2 active border-danger"
+              aria-current="page"
+              href="test_cases.html"
+              >Test Cases</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2" href="test-runs-view.html">Test Runs</a>
@@ -248,16 +233,68 @@
             <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
               <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item">
-                  <a href="#" class="text-danger fw-semibold">Requirements</a>
+                  <a href="#" class="text-danger fw-semibold">Test Cases</a>
                 </li>
                 <li
                   class="breadcrumb-item active fw-semibold"
                   aria-current="page"
                 >
-                  Import Requirment - Mapping
+                  Import
                 </li>
               </ol>
             </nav>
+          </div>
+          <div class="mt-3 text-center">
+            <div
+              class="btn-group p-2 rounded-pill bg-danger"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-danger rounded-pill me-2" for="btnradio1"
+                >Import</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+              />
+              <label class="btn btn-danger rounded-pill me-2" for="btnradio2"
+                >Data Migration</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio3"
+                autocomplete="off"
+              />
+              <label class="btn btn-danger rounded-pill me-2" for="btnradio3"
+                >Import (XML)</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio4"
+                autocomplete="off"
+              />
+              <label class="btn btn-danger rounded-pill" for="btnradio4"
+                >Import (Bulk Update)</label
+              >
+            </div>
           </div>
           <div class="guide py-3 d-flex">
             <a
@@ -299,20 +336,78 @@
                   </div>
                 </div>
               </div>
+              <div class="py-1 text-center" style="color: #999">
+                File size should be less than 1MB and allowed formats are .csv,
+                .xls, .xlsx
+              </div>
+              <div class="py-3 d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Test Case (Text)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Test Case (Steps)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault3"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Test Case (Custom Fields)
+                  </label>
+                </div>
+              </div>
               <div>
-                <div class="col-6 m-3 row align-items-center">
-                  <div class="col col-2">
-                    <i class="bi bi-filetype-csv fs-1"></i>
+                <div
+                  class="mt-3 d-flex justify-content-center align-items-center"
+                >
+                  <div class="fw-semibold me-3">
+                    Download Sample Test Case (Step Template)
                   </div>
-                  <div class="col col-10 ps-0" style="font-size: small">
-                    <p class="text-danger m-0 pe-0 pt-4">
-                      Download Sample Requirement in .CSV format
-                    </p>
-                    <p class="me-0 pe-0">(File size must be less than 1MB.)</p>
-                  </div>
+                  <i class="bi bi-filetype-csv fs-1 me-3 text-danger"></i>
+                  <i class="bi bi-filetype-xls fs-1 text-danger"></i>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="mt-2 mb-3 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-danger disabled me-5"
+              data-bs-toggle="button"
+              aria-pressed="true"
+              style="width: 7rem"
+            >
+              Import
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-toggle="button"
+              aria-pressed="true"
+              style="width: 7rem"
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
